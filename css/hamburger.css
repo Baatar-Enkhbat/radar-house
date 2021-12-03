@@ -86,7 +86,8 @@
 @media (max-width: 1024px) {
   .brgr {
     display: block;
-    position: relative;
+    position: fixed;
+    width: 100%;
     background: #cbf8e4;
     display: flex;
     justify-content: space-between;
@@ -100,5 +101,9 @@
 
   .fixed-menu {
     display: none;
+  }
+
+  .box {
+    width: 230px;
   }
 }
