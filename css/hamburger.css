@@ -94,7 +94,7 @@
     justify-content: space-between;
     z-index: 999;
   }
-  .brgr img {
+  .brgr .log img {
     width: 30%;
   }
   .container {
