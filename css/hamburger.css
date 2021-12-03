@@ -1,10 +1,10 @@
 :root {
-  --button-width: 40px;
+  --button-width: 30px;
   --button-height: calc(var(--button-width) * 0.8);
   --rectangle-height: calc(var(--button-width) * 0.1);
   --retangle-radius: calc(var(--button-width) * 0.04);
   --translate: calc(var(--button-width) * 0.17);
-  --transition: 0.2s;
+  --transition: 0.3s;
 }
 
 .brgr {
@@ -86,12 +86,16 @@
 @media (max-width: 1024px) {
   .brgr {
     display: block;
-    position: fixed;
+    top: 0;
+    position: sticky;
     width: 100%;
     background: #cbf8e4;
     display: flex;
     justify-content: space-between;
     z-index: 999;
+  }
+  .brgr img {
+    width: 30%;
   }
   .container {
     display: grid;
