@@ -5,51 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>HOUSING RADAR</title>
 </head>
 
 <body>
-    
-    <!DOCTYPE html>
-    <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/hamburger.css">
-        <title>HOUSING RADAR</title>
-    </head>
-    
-    <body>
-        <!-- hamburger -->
-        <div class="brgr">
-            <button class="fancy-burger">
-                <span class="box">
-                    <img src="img/menu-logo.jpg" alt="">
-                    <a href="#"><img src="img/menu-btn-1.jpg" alt=""></a>
-                    <a href="#"><img src="img/menu-btn-2.jpg" alt=""></a>
-                    <a href="#"><img src="img/menu-btn-3.jpg" alt=""></a>
-                    <a href="#"><img src="img/menu-btn-4.jpg" alt=""></a>
-                    <a href="#"><img src="img/menu-btn-5.png" alt=""></a>
-                    <a href="#"><img src="img/menu-btn-6.png" alt=""></a>
-                   <img src="img/menu-btn-inf.jpg" alt="">
-                   <a href="#"><img src="img/menu-btn-news.jpg" alt=""></a>
-                </span>
-                <span class="rectangle rectangle--top rectangle--small"></span>
-                <span class="rectangle rectangle--middle"></span>
-                <span class="rectangle rectangle--bottom rectangle--small"></span>
-            </button>
-            <div class="log">
-                <img src="img/radar-logo.png" alt="">
-            </div>
+    <!-- hamburger -->
+    <div class="brgr">
+        <button class="fancy-burger">
+            <span class="box">
+                <img src="img/menu-logo.jpg" alt="">
+                <a href="#"><img src="img/menu-btn-1.jpg" alt=""></a>
+                <a href="#"><img src="img/menu-btn-2.jpg" alt=""></a>
+                <a href="#"><img src="img/menu-btn-3.jpg" alt=""></a>
+                <a href="#"><img src="img/menu-btn-4.jpg" alt=""></a>
+                <a href="#"><img src="img/menu-btn-5.png" alt=""></a>
+                <a href="#"><img src="img/menu-btn-6.png" alt=""></a>
+                <img src="img/menu-btn-inf.jpg" alt="">
+                <a href="#"><img src="img/menu-btn-news.jpg" alt=""></a>
+            </span>
+            <span class="rectangle rectangle--top rectangle--small"></span>
+            <span class="rectangle rectangle--middle"></span>
+            <span class="rectangle rectangle--bottom rectangle--small"></span>
+        </button>
+        <div class="log">
+            <img src="img/radar-logo.png" alt="">
         </div>
-        <!-- hamburger-end -->
+    </div>
 
+    <!-- hamburger-end -->
     <div class="container">
         <div class="menu">
             <div class="fixed-menu">
@@ -72,11 +58,54 @@
                 <img src="img/bg-2.png" alt="">
             </div>
             <div class="mid">
-                <img class="top-text" style="width: 20%;" src="img/top-text-contact.png" alt="">
+                <div style="padding: 10%;"></div>
 
-                <section>
-                    
-                </section>
+                <!-- contact-form -->
+                <div class="contact">
+                    <div class="container-contact">
+                        <img src="img/top-text-contact.png" alt="">
+                        <form action="action_page.php">
+
+                            <label for="fname">氏名 <span>*</span></label>
+                            <input type="text" id="name" name="fullName" placeholder="浦島　太郎">
+
+                            <label for="adress">住所 <span>*</span></label>
+                            <input type="text" id="adress" name="adress" placeholder="千葉県千葉市">
+
+                            <label for="phone">電話番号 <span>*</span></label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="000 - 0000 - 0000">
+
+                            <label for="phone">メール <span>*</span></label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="aiueo@abc.co.jp">
+
+
+
+                            <label for="gender">性別 <span>*</span></label>
+                            <div style="display: flex; justify-content: left; align-items: center;">
+                                <label for="gender">男性 &nbsp;</label>
+                                <input style="margin-right: 2%;" type="radio" name="gender" 　value="male">
+
+                                <label for="gender">女性 &nbsp;</label>
+                                <input type="radio" name="gender" 　value="female">
+                            </div>
+
+                            <label for="age">年齢 <span>*</span></label>
+                            <input type="number" id="age" name="age" placeholder="18歳">
+
+
+                            <label for="subject">ご相談事件</label>
+                            <textarea id="subject" name="subject" placeholder="内容" style="height:200px"></textarea>
+
+                            <div></div>
+
+                            <input type="submit" value="送信">
+
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- contact-form-end -->
 
                 <div><img style="width: 50%; margin: 5%;" src="img/anata.png" alt=""></div>
                 <div class="mid-5">
